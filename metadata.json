@@ -1,0 +1,6 @@
+{
+  "name": "A to Z All Service — Automatic Home Service Booking",
+  "description": "Automatic home service booking platform for electricians, plumbers, carpenters, appliance repairs, and civil work with technician dispatch and real-time tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

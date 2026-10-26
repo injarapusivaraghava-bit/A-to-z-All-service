@@ -1,0 +1,756 @@
+{
+  "users": [
+    {
+      "id": "usr-customer-1",
+      "email": "customer@atozservice.com",
+      "name": "Priya Sharma",
+      "phone": "+91 98765 43210",
+      "role": "customer",
+      "address": "Flat 402, Lotus Residency, 4th Cross Road",
+      "locality": "Central City & Downtown",
+      "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150",
+      "createdAt": "2026-09-15T10:00:00Z"
+    },
+    {
+      "id": "usr-tech-1",
+      "email": "ramesh.electrician@atozservice.com",
+      "name": "Ramesh Kumar",
+      "phone": "+91 98765 11111",
+      "role": "technician",
+      "specialty": "Electrician & Small Appliances",
+      "area": "Central City & Downtown, Tech Hub & West Hills",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150",
+      "createdAt": "2026-08-10T09:00:00Z"
+    },
+    {
+      "id": "usr-tech-2",
+      "email": "suresh.plumber@atozservice.com",
+      "name": "Suresh Patil",
+      "phone": "+91 98765 22222",
+      "role": "technician",
+      "specialty": "Plumbing & Civil Work",
+      "area": "Green Valley & Lakeview, Central City & Downtown",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150",
+      "createdAt": "2026-08-12T09:00:00Z"
+    },
+    {
+      "id": "usr-tech-3",
+      "email": "manoj.appliances@atozservice.com",
+      "name": "Manoj Verma",
+      "phone": "+91 98765 33333",
+      "role": "technician",
+      "specialty": "AC, Refrigerator & Washing Machine",
+      "area": "Tech Hub & West Hills, North Residential Enclave",
+      "avatar": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=150",
+      "createdAt": "2026-08-14T09:00:00Z"
+    },
+    {
+      "id": "usr-admin-1",
+      "email": "admin@atozservice.com",
+      "name": "Vikas Rao (Operations Head)",
+      "phone": "+91 98765 99999",
+      "role": "admin",
+      "createdAt": "2026-07-01T08:00:00Z"
+    }
+  ],
+  "services": [
+    {
+      "id": "srv-electrician",
+      "slug": "electrician",
+      "name": "Electrician Services",
+      "categoryGroup": "Electrical & Power",
+      "shortDesc": "Wiring, MCB tripping, switches, light fixtures & short circuit repair.",
+      "fullDesc": "Certified residential and commercial electricians for full house wiring, switchboard upgrades, fault diagnosis, circuit breaker trip troubleshooting, invertor setup, and safety earth grounding.",
+      "iconName": "Zap",
+      "basePrice": 199,
+      "priceUnit": "Inspection & Base Visit",
+      "estimatedTime": "45 - 90 mins",
+      "priceNote": "Standard visiting charge includes diagnosis; parts and cabling billed transparently.",
+      "commonIssues": [
+        "Frequent MCB / fuse tripping",
+        "Faulty switchboards & broken sockets",
+        "Short circuit & burning smell inspection",
+        "Ceiling lights, chandeliers & LED strip fitting",
+        "Inverter and battery installation & maintenance"
+      ],
+      "features": [
+        "Background-verified technicians",
+        "Insulated safety tools",
+        "30-day workmanship guarantee"
+      ]
+    },
+    {
+      "id": "srv-plumber",
+      "slug": "plumber",
+      "name": "Plumbing & Water Systems",
+      "categoryGroup": "Piping & Drainage",
+      "shortDesc": "Leakage detection, tap/pipe replacements, water tanks & sanitary fitting.",
+      "fullDesc": "Expert plumbers for rapid leak repairs, concealed pipe bursting, blockage removal in drains, bathroom fitting replacements, water pump connections, and overhead water tank pipeline maintenance.",
+      "iconName": "Droplets",
+      "basePrice": 199,
+      "priceUnit": "Inspection & Base Visit",
+      "estimatedTime": "45 - 120 mins",
+      "priceNote": "Includes pressure check and joint inspection; CPVC/PVC spare parts billed at MRP.",
+      "commonIssues": [
+        "Dripping taps & shower cartridge leaks",
+        "Blocked drainage pipes & sink traps",
+        "Flush tank overflow & toilet leakage",
+        "Concealed wall pipe dampness diagnosis",
+        "Motor pump pipeline and valve fitting"
+      ],
+      "features": [
+        "High-precision leak detectors",
+        "CPVC & GI pipe tooling",
+        "Guaranteed seal joints"
+      ]
+    },
+    {
+      "id": "srv-carpenter",
+      "slug": "carpenter",
+      "name": "Carpentry & Woodwork",
+      "categoryGroup": "Interior & Furniture",
+      "shortDesc": "Door locks, hinges, furniture assembly, wardrobe repairs & custom woodwork.",
+      "fullDesc": "Master carpenters for precision woodwork, door alignments, hydraulic hinge fittings, wardrobe sliders, wooden bed repairs, modular kitchen drawer adjustments, and custom shelving.",
+      "iconName": "Hammer",
+      "basePrice": 249,
+      "priceUnit": "Inspection & Base Visit",
+      "estimatedTime": "60 - 180 mins",
+      "priceNote": "Hardware hinges, handles, and timber charged at competitive transparent rates.",
+      "commonIssues": [
+        "Door jamming or lock / handle replacement",
+        "Modular kitchen drawer slider realignment",
+        "Wardrobe hinge loose & hydraulic fitting",
+        "Bed frame tightening & wooden squeak fix",
+        "Furniture dismantling & reassembly"
+      ],
+      "features": [
+        "Precision leveling lasers",
+        "Premium fittings guidance",
+        "Clean workspace cleanup"
+      ]
+    },
+    {
+      "id": "srv-mason-civil",
+      "slug": "mason-and-civil-work",
+      "name": "Mason & Civil Work",
+      "categoryGroup": "Structural & Masonry",
+      "shortDesc": "Brickwork, plastering, wall crack repair, parapet fixes & concrete restoration.",
+      "fullDesc": "Skilled civil masons for wall dismantling, brick laying, plaster patching, terrace parapet repairs, water seepage cementation, column edge reconstruction, and minor structural masonry.",
+      "iconName": "BrickWall",
+      "basePrice": 349,
+      "priceUnit": "Inspection & Base Visit",
+      "estimatedTime": "1 - 2 days depending on scope",
+      "priceNote": "Cement, sand, and aggregate materials can be procured directly or provided on bill.",
+      "commonIssues": [
+        "Wall cracks & plaster flaking repair",
+        "Window frame seal & masonry gap filling",
+        "Parapet wall rebuilding & coping repair",
+        "Balcony slope correction & water runoff",
+        "Demolition of non-load bearing partitions"
+      ],
+      "features": [
+        "Experienced civil masons",
+        "Waterproof mortar mixtures",
+        "Structural safety first"
+      ]
+    },
+    {
+      "id": "srv-painting-putty",
+      "slug": "painting-and-putty",
+      "name": "Painting & Putty Work",
+      "categoryGroup": "Finishing & Coating",
+      "shortDesc": "Interior/exterior wall painting, putty smoothing, damp seal & texture finishes.",
+      "fullDesc": "Complete painting and surface preparation solutions. High-grade double-coat wall putty, primer, anti-fungal damp proofing, washable interior emulsions, and exterior weather-coat paint systems.",
+      "iconName": "Paintbrush",
+      "basePrice": 299,
+      "priceUnit": "Site Measurement & Estimate",
+      "estimatedTime": "1 - 3 days per room",
+      "priceNote": "Measurement-based per sq.ft billing with paint brand warranties provided.",
+      "commonIssues": [
+        "Single room touch-up & accent wall finish",
+        "Water seepage scraping & waterproof putty",
+        "Complete home repainting (interior/exterior)",
+        "Ceiling damp spot peeling repair",
+        "Enamel painting on metal grilles & wooden doors"
+      ],
+      "features": [
+        "Floor protection sheets used",
+        "Machine sanding dust-free",
+        "Color shade consultation"
+      ]
+    },
+    {
+      "id": "srv-tiles-granite",
+      "slug": "tiles-and-granite",
+      "name": "Tiles & Granite Work",
+      "categoryGroup": "Flooring & Countertops",
+      "shortDesc": "Tile replacement, granite countertop cutting, epoxy grouting & leveling.",
+      "fullDesc": "Specialist tile setters and stonemasons for vitrified tiles, ceramic flooring, bathroom wall tiles, marble polishing, kitchen granite sink cutouts, hollow tile re-bonding, and waterproof epoxy grouting.",
+      "iconName": "Layers",
+      "basePrice": 349,
+      "priceUnit": "Inspection & Base Visit",
+      "estimatedTime": "3 - 8 hours",
+      "priceNote": "Specialist adhesive, spacers, and diamond cutting blades included.",
+      "commonIssues": [
+        "Cracked or broken floor tile replacement",
+        "Hollow sounding tiles relaying",
+        "Kitchen granite countertop cutting & sink installation",
+        "Epoxy grout application in bathrooms to stop leaks",
+        "Skirting tiles fixing and marble edge chamfering"
+      ],
+      "features": [
+        "Laser level alignment",
+        "Diamond wet-cutters (minimal chipping)",
+        "Epoxy waterproof seal"
+      ]
+    },
+    {
+      "id": "srv-major-appliances",
+      "slug": "ac-refrigerator-washing-machine-repairs",
+      "name": "AC, Fridge & Washing Machine Repairs",
+      "categoryGroup": "Heavy Appliances",
+      "shortDesc": "Inverter AC gas charging, refrigerator cooling issues, front/top load washer fixes.",
+      "fullDesc": "Expert appliance technicians trained for all major brands (LG, Samsung, Whirlpool, Daikin, IFB, Bosch). Fast diagnosis of PCB errors, compressor failures, gas leakage, drum noise, and thermostat faults.",
+      "iconName": "Tv",
+      "basePrice": 249,
+      "priceUnit": "Diagnosis & Inspection",
+      "estimatedTime": "60 - 90 mins",
+      "priceNote": "Diagnostic charge waived if comprehensive repair or part replacement is approved.",
+      "commonIssues": [
+        "AC not cooling or gas top-up needed",
+        "AC water leaking into the room",
+        "Refrigerator freezer frosting but fridge section warm",
+        "Washing machine drum not spinning or vibrating violently",
+        "Washing machine water drain error (E20/OE)"
+      ],
+      "features": [
+        "OEM genuine spare parts",
+        "Digital manifold pressure gauges",
+        "90-day parts warranty"
+      ]
+    },
+    {
+      "id": "srv-small-appliances",
+      "slug": "fan-mixer-motor-gas-stove-repairs",
+      "name": "Fan, Mixer, Motor & Gas Stove Repairs",
+      "categoryGroup": "Small Home Appliances",
+      "shortDesc": "Ceiling fans, mixer grinder blades/motors, submersible pumps & stove burners.",
+      "fullDesc": "On-demand repairs for daily home appliances. Capacitor and bearing replacement for ceiling/exhaust fans, mixer coupler and motor winding fixes, water pump starter repairs, and gas stove valve servicing.",
+      "iconName": "Cpu",
+      "basePrice": 179,
+      "priceUnit": "Inspection & Base Visit",
+      "estimatedTime": "30 - 60 mins",
+      "priceNote": "Capacitors, couplers, pump seals, and burner nozzles billed at transparent rates.",
+      "commonIssues": [
+        "Ceiling fan making squeaking noise or rotating slowly",
+        "Mixer grinder spark, blade jamming or smoke smell",
+        "Water motor pump not lifting water or hum sound",
+        "Gas stove yellow flame or clogged brass burner",
+        "Submersible starter box switch & relay replacement"
+      ],
+      "features": [
+        "Same-day doorstep turnaround",
+        "Copper coil test meters",
+        "Burner gas leak safety check"
+      ]
+    },
+    {
+      "id": "srv-cleaning",
+      "slug": "cleaning-and-housekeeping",
+      "name": "Cleaning & Housekeeping",
+      "categoryGroup": "Home Hygiene",
+      "shortDesc": "Deep bathroom cleaning, kitchen degreasing, sofa shampooing & full home scrub.",
+      "fullDesc": "Professional residential deep cleaning using industrial single-disc floor scrubbers, vacuum extraction machines, and eco-friendly descaling chemicals for tile stains, exhaust fans, and bathroom scales.",
+      "iconName": "Sparkles",
+      "basePrice": 399,
+      "priceUnit": "Per Space / Base Unit",
+      "estimatedTime": "2 - 5 hours",
+      "priceNote": "Single bathroom, deep kitchen, sofa or whole house packages selectable.",
+      "commonIssues": [
+        "Hard water scale stain removal on bathroom tiles & fixtures",
+        "Kitchen chimney and countertop grease extraction",
+        "Fabric sofa & mattress deep shampooing",
+        "Post-renovation dust cleaning & floor buffing",
+        "Balcony pigeon mess sanitize & disinfection"
+      ],
+      "features": [
+        "Hospital-grade disinfectants",
+        "High-suction extraction vacuums",
+        "Uniformed crew"
+      ]
+    },
+    {
+      "id": "srv-other-home",
+      "slug": "other-home-services",
+      "name": "Other Home Services & Handyman",
+      "categoryGroup": "General Utility",
+      "shortDesc": "Curtain rods, TV wall mounting, mosquito mesh, glass glaze & pest control.",
+      "fullDesc": "Multi-skilled handyman support for tasks that don’t fit a single trade: TV bracket installation, mirror & artwork mounting, window mosquito mesh netting, sliding glass roller fixes, and ro-water purifier filters.",
+      "iconName": "Wrench",
+      "basePrice": 199,
+      "priceUnit": "Base Handyman Visit",
+      "estimatedTime": "45 - 90 mins",
+      "priceNote": "Heavy duty anchors, brackets, and mesh hardware supplied upon request.",
+      "commonIssues": [
+        "TV wall bracket mounting & cable management",
+        "Curtain track / rod fixing & wall mirrors",
+        "Mosquito mesh frame installation on windows",
+        "Water purifier (RO) filter replacement & service",
+        "Sliding balcony door roller wheel replacement"
+      ],
+      "features": [
+        "Rotary hammer drill precision",
+        "Stud & wire detector scanning",
+        "Versatile handyman kit"
+      ]
+    }
+  ],
+  "serviceAreas": [
+    {
+      "id": "area-1",
+      "name": "Central City & Downtown",
+      "city": "Metro",
+      "pincode": "500001",
+      "active": true
+    },
+    {
+      "id": "area-2",
+      "name": "Tech Hub & West Hills",
+      "city": "Metro",
+      "pincode": "500081",
+      "active": true
+    },
+    {
+      "id": "area-3",
+      "name": "Green Valley & Lakeview",
+      "city": "Metro",
+      "pincode": "500034",
+      "active": true
+    },
+    {
+      "id": "area-4",
+      "name": "East Commercial Zone",
+      "city": "Metro",
+      "pincode": "500072",
+      "active": true
+    },
+    {
+      "id": "area-5",
+      "name": "North Residential Enclave",
+      "city": "Metro",
+      "pincode": "500090",
+      "active": true
+    },
+    {
+      "id": "area-6",
+      "name": "South Garden Suburbs",
+      "city": "Metro",
+      "pincode": "500068",
+      "active": true
+    }
+  ],
+  "technicians": [
+    {
+      "id": "tech-1",
+      "userId": "usr-tech-1",
+      "name": "Ramesh Kumar",
+      "phone": "+91 98765 11111",
+      "specialtyCategories": [
+        "srv-electrician",
+        "srv-small-appliances",
+        "srv-other-home"
+      ],
+      "serviceAreas": [
+        "Central City & Downtown",
+        "Tech Hub & West Hills"
+      ],
+      "rating": 4.9,
+      "reviewCount": 38,
+      "jobsCompleted": 142,
+      "isAvailable": true,
+      "experienceYears": 8
+    },
+    {
+      "id": "tech-2",
+      "userId": "usr-tech-2",
+      "name": "Suresh Patil",
+      "phone": "+91 98765 22222",
+      "specialtyCategories": [
+        "srv-plumber",
+        "srv-mason-civil",
+        "srv-tiles-granite"
+      ],
+      "serviceAreas": [
+        "Green Valley & Lakeview",
+        "Central City & Downtown"
+      ],
+      "rating": 4.8,
+      "reviewCount": 29,
+      "jobsCompleted": 98,
+      "isAvailable": true,
+      "experienceYears": 10
+    },
+    {
+      "id": "tech-3",
+      "userId": "usr-tech-3",
+      "name": "Manoj Verma",
+      "phone": "+91 98765 33333",
+      "specialtyCategories": [
+        "srv-major-appliances",
+        "srv-small-appliances"
+      ],
+      "serviceAreas": [
+        "Tech Hub & West Hills",
+        "North Residential Enclave"
+      ],
+      "rating": 4.95,
+      "reviewCount": 44,
+      "jobsCompleted": 175,
+      "isAvailable": true,
+      "experienceYears": 7
+    },
+    {
+      "id": "tech-4",
+      "userId": "usr-tech-4",
+      "name": "Arjun Das",
+      "phone": "+91 98765 44444",
+      "specialtyCategories": [
+        "srv-carpenter",
+        "srv-painting-putty",
+        "srv-other-home"
+      ],
+      "serviceAreas": [
+        "Central City & Downtown",
+        "South Garden Suburbs"
+      ],
+      "rating": 4.75,
+      "reviewCount": 22,
+      "jobsCompleted": 76,
+      "isAvailable": true,
+      "experienceYears": 6
+    },
+    {
+      "id": "tech-5",
+      "userId": "usr-tech-5",
+      "name": "Kavita Chawla & Team",
+      "phone": "+91 98765 55555",
+      "specialtyCategories": [
+        "srv-cleaning",
+        "srv-other-home"
+      ],
+      "serviceAreas": [
+        "Central City & Downtown",
+        "Tech Hub & West Hills",
+        "Green Valley & Lakeview"
+      ],
+      "rating": 4.9,
+      "reviewCount": 51,
+      "jobsCompleted": 210,
+      "isAvailable": true,
+      "experienceYears": 5
+    }
+  ],
+  "bookings": [
+    {
+      "id": "book-1792552462812",
+      "reference": "ATOZ-2026-2504",
+      "customerId": "usr-customer-1",
+      "customerName": "Priya Sharma",
+      "customerPhone": "+91 98765 43210",
+      "customerEmail": "customer@atozservice.com",
+      "serviceId": "srv-plumber",
+      "serviceName": "Plumbing & Water Systems",
+      "subService": "Dripping taps & shower cartridge leaks",
+      "address": "Flat 402, Lotus Residency",
+      "locality": "Central City & Downtown",
+      "preferredDate": "2026-10-23",
+      "preferredTimeSlot": "10:00 AM - 01:00 PM (Morning)",
+      "problemDescription": "Bathroom basin cold water mixer tap is leaking continuously from the cartridge.",
+      "priceEstimate": {
+        "baseVisit": 199,
+        "estimatedRange": "₹199 - ₹597",
+        "currency": "INR"
+      },
+      "status": "Assigned",
+      "technicianId": "tech-2",
+      "technicianName": "Suresh Patil",
+      "technicianPhone": "+91 98765 22222",
+      "statusHistory": [
+        {
+          "id": "hist-1792552462812-1",
+          "bookingId": "book-1792552462812",
+          "status": "Pending",
+          "updatedByUserId": "usr-customer-1",
+          "updatedByName": "Priya Sharma",
+          "updatedByRole": "customer",
+          "timestamp": "2026-10-21T03:14:22.812Z",
+          "note": "Customer requested booking with confirmed summary."
+        },
+        {
+          "id": "hist-1792552462812-2",
+          "bookingId": "book-1792552462812",
+          "status": "Assigned",
+          "updatedByUserId": "system",
+          "updatedByName": "Auto-Dispatch System",
+          "updatedByRole": "system",
+          "timestamp": "2026-10-21T03:14:22.812Z",
+          "note": "Direct match: Assigned to specialist Suresh Patil for Central City & Downtown."
+        }
+      ],
+      "createdAt": "2026-10-21T03:14:22.812Z",
+      "updatedAt": "2026-10-21T03:14:22.812Z",
+      "hasReviewed": false
+    },
+    {
+      "id": "book-1001",
+      "reference": "ATOZ-2026-1001",
+      "customerId": "usr-customer-1",
+      "customerName": "Priya Sharma",
+      "customerPhone": "+91 98765 43210",
+      "customerEmail": "customer@atozservice.com",
+      "serviceId": "srv-electrician",
+      "serviceName": "Electrician Services",
+      "subService": "Frequent MCB / fuse tripping",
+      "address": "Flat 402, Lotus Residency, 4th Cross Road",
+      "locality": "Central City & Downtown",
+      "preferredDate": "2026-10-22",
+      "preferredTimeSlot": "10:00 AM - 01:00 PM",
+      "problemDescription": "Main circuit breaker trips immediately when geyser or AC is turned on in master bedroom.",
+      "priceEstimate": {
+        "baseVisit": 199,
+        "estimatedRange": "₹199 - ₹450",
+        "currency": "INR"
+      },
+      "status": "Assigned",
+      "technicianId": "tech-1",
+      "technicianName": "Ramesh Kumar",
+      "technicianPhone": "+91 98765 11111",
+      "statusHistory": [
+        {
+          "id": "hist-1",
+          "bookingId": "book-1001",
+          "status": "Pending",
+          "updatedByUserId": "usr-customer-1",
+          "updatedByName": "Priya Sharma",
+          "updatedByRole": "customer",
+          "timestamp": "2026-10-20T08:15:00Z",
+          "note": "Customer submitted booking request"
+        },
+        {
+          "id": "hist-2",
+          "bookingId": "book-1001",
+          "status": "Confirmed",
+          "updatedByUserId": "usr-admin-1",
+          "updatedByName": "Vikas Rao (Operations Head)",
+          "updatedByRole": "admin",
+          "timestamp": "2026-10-20T08:25:00Z",
+          "note": "Booking verified and accepted"
+        },
+        {
+          "id": "hist-3",
+          "bookingId": "book-1001",
+          "status": "Assigned",
+          "updatedByUserId": "usr-admin-1",
+          "updatedByName": "Vikas Rao (Operations Head)",
+          "updatedByRole": "admin",
+          "timestamp": "2026-10-20T08:30:00Z",
+          "note": "Assigned to Senior Electrician Ramesh Kumar"
+        }
+      ],
+      "createdAt": "2026-10-20T08:15:00Z",
+      "updatedAt": "2026-10-20T08:30:00Z",
+      "hasReviewed": false
+    },
+    {
+      "id": "book-1002",
+      "reference": "ATOZ-2026-1002",
+      "customerId": "usr-customer-1",
+      "customerName": "Priya Sharma",
+      "customerPhone": "+91 98765 43210",
+      "customerEmail": "customer@atozservice.com",
+      "serviceId": "srv-major-appliances",
+      "serviceName": "AC, Fridge & Washing Machine Repairs",
+      "subService": "AC not cooling or gas top-up needed",
+      "address": "Flat 402, Lotus Residency, 4th Cross Road",
+      "locality": "Central City & Downtown",
+      "preferredDate": "2026-10-18",
+      "preferredTimeSlot": "02:00 PM - 05:00 PM",
+      "problemDescription": "Split AC blowing normal air instead of cold air; coil cleaning and gas check required.",
+      "priceEstimate": {
+        "baseVisit": 249,
+        "estimatedRange": "₹249 - ₹1,200",
+        "currency": "INR"
+      },
+      "status": "Completed",
+      "technicianId": "tech-3",
+      "technicianName": "Manoj Verma",
+      "technicianPhone": "+91 98765 33333",
+      "statusHistory": [
+        {
+          "id": "hist-4",
+          "bookingId": "book-1002",
+          "status": "Pending",
+          "updatedByUserId": "usr-customer-1",
+          "updatedByName": "Priya Sharma",
+          "updatedByRole": "customer",
+          "timestamp": "2026-10-18T09:00:00Z",
+          "note": "Customer submitted booking"
+        },
+        {
+          "id": "hist-5",
+          "bookingId": "book-1002",
+          "status": "Assigned",
+          "updatedByUserId": "usr-admin-1",
+          "updatedByName": "Admin",
+          "updatedByRole": "admin",
+          "timestamp": "2026-10-18T09:20:00Z",
+          "note": "Technician Manoj Verma assigned"
+        },
+        {
+          "id": "hist-6",
+          "bookingId": "book-1002",
+          "status": "On the Way",
+          "updatedByUserId": "usr-tech-3",
+          "updatedByName": "Manoj Verma",
+          "updatedByRole": "technician",
+          "timestamp": "2026-10-18T13:45:00Z",
+          "note": "Technician travelling with toolkit & vacuum gauge"
+        },
+        {
+          "id": "hist-7",
+          "bookingId": "book-1002",
+          "status": "In Progress",
+          "updatedByUserId": "usr-tech-3",
+          "updatedByName": "Manoj Verma",
+          "updatedByRole": "technician",
+          "timestamp": "2026-10-18T14:15:00Z",
+          "note": "Coil washed and capacitor replaced"
+        },
+        {
+          "id": "hist-8",
+          "bookingId": "book-1002",
+          "status": "Completed",
+          "updatedByUserId": "usr-tech-3",
+          "updatedByName": "Manoj Verma",
+          "updatedByRole": "technician",
+          "timestamp": "2026-10-18T15:30:00Z",
+          "note": "Cooling verified at 18C, job completed"
+        }
+      ],
+      "createdAt": "2026-10-18T09:00:00Z",
+      "updatedAt": "2026-10-18T15:30:00Z",
+      "hasReviewed": true
+    }
+  ],
+  "reviews": [
+    {
+      "id": "rev-201",
+      "bookingId": "book-1002",
+      "bookingReference": "ATOZ-2026-1002",
+      "customerId": "usr-customer-1",
+      "customerName": "Priya Sharma",
+      "technicianId": "tech-3",
+      "technicianName": "Manoj Verma",
+      "serviceId": "srv-major-appliances",
+      "serviceName": "AC, Fridge & Washing Machine Repairs",
+      "rating": 5,
+      "comment": "Manoj arrived right on time, explained that only the run capacitor was weak, replaced it quickly and avoided unnecessary gas charging. Honest and professional service!",
+      "createdAt": "2026-10-18T17:00:00Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notif-1792552462812-admin",
+      "recipientUserId": "usr-admin-1",
+      "recipientRole": "admin",
+      "title": "New Booking ATOZ-2026-2504",
+      "message": "Priya Sharma booked Plumbing & Water Systems in Central City & Downtown. Status: Assigned.",
+      "channel": "in_app",
+      "deliveryStatus": "delivered",
+      "bookingId": "book-1792552462812",
+      "bookingReference": "ATOZ-2026-2504",
+      "timestamp": "2026-10-21T03:14:22.812Z",
+      "isRead": false
+    },
+    {
+      "id": "notif-1792552462812-tech",
+      "recipientUserId": "usr-tech-2",
+      "recipientRole": "technician",
+      "title": "New Service Job Assigned",
+      "message": "Job ATOZ-2026-2504: Plumbing & Water Systems at Flat 402, Lotus Residency, Central City & Downtown. Preferred slot: 2026-10-23 (10:00 AM - 01:00 PM (Morning)).",
+      "channel": "in_app",
+      "deliveryStatus": "delivered",
+      "bookingId": "book-1792552462812",
+      "bookingReference": "ATOZ-2026-2504",
+      "timestamp": "2026-10-21T03:14:22.812Z",
+      "isRead": false,
+      "deliveryLog": {
+        "channel": "WhatsApp",
+        "recipientContact": "+91 98765 22222",
+        "dispatchedAt": "2026-10-21T03:14:22.812Z",
+        "status": "SUCCESS",
+        "providerId": "WA-DISPATCH-405111"
+      }
+    },
+    {
+      "id": "notif-1792552462812-cust",
+      "recipientUserId": "usr-customer-1",
+      "recipientRole": "customer",
+      "title": "Booking Confirmed & Technician Assigned",
+      "message": "Your booking ATOZ-2026-2504 for Plumbing & Water Systems has been assigned to Suresh Patil. Scheduled for 2026-10-23 (10:00 AM - 01:00 PM (Morning)).",
+      "channel": "in_app",
+      "deliveryStatus": "delivered",
+      "bookingId": "book-1792552462812",
+      "bookingReference": "ATOZ-2026-2504",
+      "timestamp": "2026-10-21T03:14:22.812Z",
+      "isRead": false,
+      "deliveryLog": {
+        "channel": "SMS",
+        "recipientContact": "+91 98765 43210",
+        "dispatchedAt": "2026-10-21T03:14:22.812Z",
+        "status": "SUCCESS",
+        "providerId": "SMS-GATEWAY-TX-846285"
+      }
+    },
+    {
+      "id": "notif-1",
+      "recipientUserId": "usr-customer-1",
+      "recipientRole": "customer",
+      "title": "Technician Assigned",
+      "message": "Senior Electrician Ramesh Kumar has been assigned to your booking ATOZ-2026-1001 for Oct 22, 10:00 AM.",
+      "channel": "in_app",
+      "deliveryStatus": "delivered",
+      "bookingId": "book-1001",
+      "bookingReference": "ATOZ-2026-1001",
+      "timestamp": "2026-10-20T08:30:00Z",
+      "isRead": false,
+      "deliveryLog": {
+        "channel": "SMS",
+        "recipientContact": "+91 98765 43210",
+        "dispatchedAt": "2026-10-20T08:30:01Z",
+        "status": "SUCCESS",
+        "providerId": "SMS-GATEWAY-TX-984021"
+      }
+    },
+    {
+      "id": "notif-2",
+      "recipientUserId": "usr-tech-1",
+      "recipientRole": "technician",
+      "title": "New Service Job Assigned",
+      "message": "You have been assigned to ATOZ-2026-1001: Electrician Services at Flat 402 Lotus Residency, Central City.",
+      "channel": "in_app",
+      "deliveryStatus": "delivered",
+      "bookingId": "book-1001",
+      "bookingReference": "ATOZ-2026-1001",
+      "timestamp": "2026-10-20T08:30:00Z",
+      "isRead": false,
+      "deliveryLog": {
+        "channel": "WhatsApp",
+        "recipientContact": "+91 98765 11111",
+        "dispatchedAt": "2026-10-20T08:30:02Z",
+        "status": "SUCCESS",
+        "providerId": "WA-MSG-883910"
+      }
+    }
+  ]
+}
